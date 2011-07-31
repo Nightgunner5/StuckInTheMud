@@ -15,15 +15,18 @@ permissions:
     default: op
     children:
       sitm.admin.start: true
-#      stocks.admin.remove: true
-#      stocks.admin.modify: true
-#      stocks.admin.limit: true
-#      stocks.admin.private: true
-#      stock.admin.public: true
-#  stocks.users.*:
-#    default: true
-#    children:
-#      stocks.users.top5: true
+      sitm.admin.begin: true
+      sitm.admin.cancel: true
+      sitm.admin.define: true
+      sitm.admin.generate: true
+      sitm.admin.teardown: true
+      sitm.admin.freeze: true
+      sitm.admin.forcereg: true
+      sitm.admin.endgame: true
+  sitm.users.*:
+    default: true
+    children:
+      sitm.users.join: true
 #      stocks.users.lookup: true
 #      stocks.users.trade: true
 #      stocks.users.gift: true
